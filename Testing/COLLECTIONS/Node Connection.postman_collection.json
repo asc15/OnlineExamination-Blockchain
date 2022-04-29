@@ -1,0 +1,569 @@
+{
+	"info": {
+		"_postman_id": "2697cd85-bdf2-445a-b4b9-6bd2123334d6",
+		"name": "Node Connection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "S1D1C1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status test\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nodes\": [\"{{base_url}}:5000\",\r\n              \"{{base_url}}:5003\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}:5001/connect_node",
+					"host": [
+						"{{base_url}}"
+					],
+					"port": "5001",
+					"path": [
+						"connect_node"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "S1D1C2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status test\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nodes\": [\"{{base_url}}:5001\",\r\n              \"{{base_url}}:5003\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}:5000/connect_node",
+					"host": [
+						"{{base_url}}"
+					],
+					"port": "5000",
+					"path": [
+						"connect_node"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "S1D1C3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status test\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nodes\": [\"{{base_url}}:5001\",\r\n              \"{{base_url}}:5000\",\r\n              \"{{base_url}}:5004\",\r\n              \"{{base_url}}:5007\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}:5003/connect_node",
+					"host": [
+						"{{base_url}}"
+					],
+					"port": "5003",
+					"path": [
+						"connect_node"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "S1D2C4",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status test\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nodes\": [\"{{base_url}}:5003\",\r\n              \"{{base_url}}:5005\",\r\n              \"{{base_url}}:5006\",\r\n              \"{{base_url}}:5007\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}:5004/connect_node",
+					"host": [
+						"{{base_url}}"
+					],
+					"port": "5004",
+					"path": [
+						"connect_node"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "S1D2C5",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status test\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nodes\": [\"{{base_url}}:5004\",\r\n              \"{{base_url}}:5006\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}:5005/connect_node",
+					"host": [
+						"{{base_url}}"
+					],
+					"port": "5005",
+					"path": [
+						"connect_node"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "S1D2C6",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status test\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nodes\": [\"{{base_url}}:5004\",\r\n              \"{{base_url}}:5005\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}:5006/connect_node",
+					"host": [
+						"{{base_url}}"
+					],
+					"port": "5006",
+					"path": [
+						"connect_node"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "S1D3C7",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status test\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nodes\": [\"{{base_url}}:5003\",\r\n              \"{{base_url}}:5004\",\r\n              \"{{base_url}}:5008\",\r\n              \"{{base_url}}:5011\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}:5007/connect_node",
+					"host": [
+						"{{base_url}}"
+					],
+					"port": "5007",
+					"path": [
+						"connect_node"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "S2D1C8",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status test\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nodes\": [\"{{base_url}}:5007\",\r\n              \"{{base_url}}:5009\",\r\n              \"{{base_url}}:5011\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}:5008/connect_node",
+					"host": [
+						"{{base_url}}"
+					],
+					"port": "5008",
+					"path": [
+						"connect_node"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "S2D2C9",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status test\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nodes\": [\"{{base_url}}:5008\",\r\n              \"{{base_url}}:5010\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}:5009/connect_node",
+					"host": [
+						"{{base_url}}"
+					],
+					"port": "5009",
+					"path": [
+						"connect_node"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "S2D3C10",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status test\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nodes\": [\"{{base_url}}:5009\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}:5010/connect_node",
+					"host": [
+						"{{base_url}}"
+					],
+					"port": "5010",
+					"path": [
+						"connect_node"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "S3D1C11",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status test\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nodes\": [\"{{base_url}}:5007\",\r\n              \"{{base_url}}:5008\",\r\n              \"{{base_url}}:5012\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}:5011/connect_node",
+					"host": [
+						"{{base_url}}"
+					],
+					"port": "5011",
+					"path": [
+						"connect_node"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "S3D2C12",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status test\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nodes\": [\"{{base_url}}:5011\",\r\n              \"{{base_url}}:5013\",\r\n              \"{{base_url}}:5014\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}:5012/connect_node",
+					"host": [
+						"{{base_url}}"
+					],
+					"port": "5012",
+					"path": [
+						"connect_node"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "S3D2C13",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status test\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nodes\": [\"{{base_url}}:5012\",\r\n              \"{{base_url}}:5014\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}:5013/connect_node",
+					"host": [
+						"{{base_url}}"
+					],
+					"port": "5013",
+					"path": [
+						"connect_node"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "S3D2C14",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status test\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nodes\": [\"{{base_url}}:5012\",\r\n              \"{{base_url}}:5013\"]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}:5014/connect_node",
+					"host": [
+						"{{base_url}}"
+					],
+					"port": "5014",
+					"path": [
+						"connect_node"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
