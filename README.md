@@ -1,2 +1,2 @@
 # OnlineExamination-Blockchain
-## **Source code** for my Research paper [ReseachGate](https://www.researchgate.net/publication/357478145_Design_Analysis_and_Implementation_of_Online_Competitive_Examination_Using_Heterogeneous_Consortium_Blockchain) ([Original Paper](https://www.ijert.org/design-analysis-and-implementation-of-online-competitive-examination-using-heterogeneous-consortium-blockchain))
+## **Source code** for my Research paper [ResearchGate](https://www.researchgate.net/publication/357478145_Design_Analysis_and_Implementation_of_Online_Competitive_Examination_Using_Heterogeneous_Consortium_Blockchain) ([Original Paper](https://www.ijert.org/design-analysis-and-implementation-of-online-competitive-examination-using-heterogeneous-consortium-blockchain))
